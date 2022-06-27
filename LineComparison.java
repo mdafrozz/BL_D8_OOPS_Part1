@@ -15,6 +15,7 @@ public class LineComparison {
 		System.out.println("-----------Welcome to Line Comparison Computation-----------");
 
 		// UC1 - Calculate Length
+		System.out.println("Enter the first line co-ordinates");
 		System.out.println("Enter Co-ordinates (x1, y1)");
 		int x1 = getInputFromUser("x1");
 		int y1 = getInputFromUser("y1");
@@ -26,6 +27,18 @@ public class LineComparison {
 		Double length = Math.floor(Math.sqrt(x + y));
 		System.out.println("Length is: " + length);
 		
+		//UC2 - Equality of two lines
+		System.out.println("Enter the second line co-ordinates");
+        System.out.println("Enter Co-ordinates (a1, b1) point");
+        int a1 = getInputFromUser("a1");
+        int b1 = getInputFromUser("b1");
+        System.out.println("Enter Co-ordinates (a2, b2) point");
+        int a2 = getInputFromUser("a2");
+        int b2 = getInputFromUser("b2");
+        double a = Math.pow((a2 - a1), 2);
+        double b = Math.pow((b2 - b1), 2);
+        double length1 = Math.floor(Math.sqrt(a + b));
+        System.out.println("Length is: " + length1);
 
 	}
 }
